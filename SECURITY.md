@@ -45,7 +45,7 @@ The complete persisted details are bounded to 4 MiB.
 
 The checkpoint and its exact post-checkpoint output suffix are sensitive session
 data. Provider encryption does not make the surrounding transcript or suffix
-public. Neither is logged or sent through install telemetry.
+public. Neither is logged.
 
 A domain-separated HMAC-SHA-256 binds replay to the current credential, auth
 mode, model, endpoint and headers. The provider-issued, high-entropy bearer
@@ -101,9 +101,6 @@ automatic paid retry after a failed attempt. Pi's standard compaction remains
 available. Local success diagnostics contain only a version, elapsed
 milliseconds, byte count and output-item count.
 
-No project settings are read. Install telemetry is best-effort, once per
-version, with a five-second timeout. It sends only package/version/runtime
-metadata and respects CI, `PI_OFFLINE`, `PI_TELEMETRY`, and
-`enableInstallTelemetry: false`.
+No project settings are read. This fork has no install telemetry.
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for validation and live-test precautions.

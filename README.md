@@ -342,5 +342,4 @@ References:
 - [Subscription restrictions](https://developers.openai.com/siwc/token-sharing-open-source/preview-limitations)
 - [Reasoning-update restrictions](https://developers.openai.com/api/docs/guides/deployment-checklist)
 
-Install telemetry is best-effort, once per version. Disable it with
-`PI_OFFLINE=1`, `PI_TELEMETRY=0`, or `enableInstallTelemetry: false`.
+This fork has no install telemetry. See [ORIGIN.md](ORIGIN.md).
